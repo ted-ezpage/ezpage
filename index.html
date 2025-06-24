@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZPage - 輕鬆與全世界分享你的網頁</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-code text-purple-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">EZPage</span>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <a href="https://github.com/gg90052/ezpage" target="_blank" class="text-gray-500 hover:text-gray-700 px-3 py-2">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <!-- Left Column - Text Content -->
+                <div class="mb-12 lg:mb-0">
+                    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6">
+                        輕鬆與全世界分享你的網頁
+                    </h1>
+                    <p class="text-xl opacity-90 mb-8">
+                        上傳HTML檔案，自動部署到GitHub Pages，一切就是這麼簡單
+                    </p>
+                    <div class="rounded-md shadow inline-block">
+                        <a href="#get-started" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-purple-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10 transition-all">
+                            立即開始 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Column - YouTube Video -->
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe class="w-full h-64 sm:h-80 md:h-96 rounded-lg shadow-lg" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="get-started" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+            <!-- Left Column -->
+            <div class="mb-12 lg:mb-0">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden p-8 transition-all card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0 bg-purple-100 p-3 rounded-lg">
+                            <i class="fas fa-sign-in-alt text-purple-600 text-2xl"></i>
+                        </div>
+                        <h2 class="ml-4 text-2xl font-bold text-gray-900">歡迎使用 EZPage</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        輕鬆上傳HTML檔案並自動部署到GitHub Pages，讓你的網頁作品快速上線。
+                    </p>
+                    
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-exclamation-circle text-yellow-400"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm text-yellow-700">
+                                    請先使用GitHub帳號登入以開始使用服務
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 transition-all">
+                        <i class="fab fa-github mr-2"></i> 使用 GitHub 登入
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden p-8 transition-all card-hover h-full">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                            <i class="fas fa-question-circle text-blue-600 text-2xl"></i>
+                        </div>
+                        <h2 class="ml-4 text-2xl font-bold text-gray-900">新手教學</h2>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6">
+                        如果你是第一次接觸GitHub或靜態網頁部署，請先閱讀我們的入門指南。
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700">
+                                    <span class="font-medium">GitHub 是什麼？</span> 請先看這篇入門介紹
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://chatgpt.com/share/6858e2cd-1e1c-800b-8137-da3bfcbb80cd" target="_blank" class="mt-6 inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-all">
+                        <i class="fas fa-book-open mr-2"></i> 閱讀教學文章
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    EZPage 的優勢
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    為什麼選擇我們來部署你的靜態網頁？
+                </p>
+            </div>
+            
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="bg-white p-8 rounded-xl shadow-sm transition-all card-hover">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600 mb-4">
+                        <i class="fas fa-bolt text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">快速部署</h3>
+                    <p class="text-gray-500">
+                        上傳後立即生效，無需等待漫長的構建過程
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm transition-all card-hover">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600 mb-4">
+                        <i class="fas fa-lock text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">安全可靠</h3>
+                    <p class="text-gray-500">
+                        基於GitHub基礎設施，全球CDN加速，99.9%可用性
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm transition-all card-hover">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600 mb-4">
+                        <i class="fas fa-dollar-sign text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">完全免費</h3>
+                    <p class="text-gray-500">
+                        無需支付任何費用，即可享受專業級的靜態網站託管
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex justify-center space-x-6 md:order-2">
+                    <a href="https://github.com/gg90052/ezpage" target="_blank" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">GitHub</span>
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+                <div class="mt-8 md:mt-0 md:order-1">
+                    <p class="text-center text-base text-gray-500">
+                        &copy; 2023 EZPage. 輕鬆與全世界分享你的網頁。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=gg90052/ezpage" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
